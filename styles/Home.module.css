@@ -1,148 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital,wght@0,700;1,300&display=swap');
 
 .main {
-  min-height: 100vh;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
-  margin: 0;
-  line-height: 1;
-  font-size: 7rem;
-  font-family: 'Oswald', sans-serif;
-  color: #FFFFFF;
-  font-weight: 400; 
+    margin: 0;
+    line-height: 1;
+    font-size: 7rem;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
 }
 
 
 .bgimg {
-  background: linear-gradient(0deg, rgba(224,191,191, 0.75), rgba(224,191,191, 0.75)), url('../images/desktop-back.png');
-  background-size: 100% 100%;
+    background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/desktop-back.png');
+    background-size: 100% 100%;
 
 }
 
 .pronouns {
-  font-family: 'Roboto Mono', monospace;
-  font-style: italic;
-  color: #FFFFFF;
-  font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 2rem;
 }
+
 .main .title {
-  margin-top: 7rem;
-}
-.pronouns p {
-  margin-top: 0;
-  height: auto;
+    margin-top: 7rem;
 }
 
 .pronouns p {
-   border-bottom: 1px solid white;
+    margin-top: 0;
+    height: auto;
+}
+
+.pronouns p {
+    border-bottom: 1px solid white;
 }
 
 .pageButton {
-  font-size: 1.75rem;
-  color: #b69591;
-  border-radius: 20px;
-  width: 13rem;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 1.8;
-  background-color: #FFE1E1;
-  margin-bottom: 1.8rem;
+    font-size: 1.75rem;
+    color: #b69591;
+    border-radius: 20px;
+    width: 13rem;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.8;
+    background-color: #FFE1E1;
+    margin-bottom: 1.8rem;
 }
 
 
 .pageButton:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 
 .pageButton {
-  -webkit-transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
+    -webkit-transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 400ms ease-in-out, color 300ms ease-in-out;
 }
+
 .pageButton:hover {
-  box-shadow: 0 0 40px 40px #fff0e1 inset;
+    box-shadow: 0 0 40px 40px #fff0e1 inset;
 }
 
 
 .main:hover {
-  cursor: default;
+    cursor: default;
 }
 
 @media screen and (min-height: 1300px) and (min-width: 2300px) {
-  .pageButton {
-    font-size: 2.5rem;
-    border-radius: 40px;
-    width: 18rem;
-  }
-  .pronouns {
-    font-size: 3rem;
-  }
-  .title {
-    font-size: 10rem;
-  }
+    .pageButton {
+        font-size: 2.5rem;
+        border-radius: 40px;
+        width: 18rem;
+    }
+
+    .pronouns {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 10rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .bgimg {
-    background: linear-gradient(0deg, rgba(224,191,191, 0.75), rgba(224,191,191, 0.75)), url('../images/mobile-back.png');
-    background-size: 100% 100%;
-  }
-  .pronouns {
-    margin-bottom: 10vh;
-    font-size: 2.2rem;
-  }
-  .pageButton:last-of-type {
-    margin-bottom: 12vh;
-  }
+    .bgimg {
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background-size: 100% 100%;
+    }
 
-  .pageButton {
-    font-size: 2rem;
-    width: 15rem;
-  }
+    .pronouns {
+        margin-bottom: 10vh;
+        font-size: 2.2rem;
+    }
+
+    .pageButton:last-of-type {
+        margin-bottom: 12vh;
+    }
+
+    .pageButton {
+        font-size: 2rem;
+        width: 15rem;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
-  .bgimg {
-    background: linear-gradient(0deg, rgba(224,191,191, 0.75), rgba(224,191,191, 0.75)), url('../images/mobile-back.png');
-    background-size: 100% 100%;
-  }
-  .pronouns {
-    margin-bottom: 10vh;
-    font-size: 2.2rem;
-  }
-  .pageButton:last-of-type {
-    margin-bottom: 12vh;
-  }
+    .bgimg {
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background-size: 100% 100%;
+    }
 
-  .pageButton {
-    font-size: 2rem;
-    width: 15rem;
-  }
+    .pronouns {
+        margin-bottom: 10vh;
+        font-size: 2.2rem;
+    }
+
+    .pageButton:last-of-type {
+        margin-bottom: 12vh;
+    }
+
+    .pageButton {
+        font-size: 2rem;
+        width: 15rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .bgimg {
-    background: linear-gradient(0deg, rgba(224,191,191, 0.75), rgba(224,191,191, 0.75)), url('../images/mobile-back.png');
-    background-size: 100% 100%;
-  }
-  .pronouns {
-    margin-bottom: 10vh;
-    font-size: 2.2rem;
-  }
-  .pageButton:last-of-type {
-    margin-bottom: 12vh;
-  }
+    .bgimg {
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background-size: 100% 100%;
+    }
 
-  .pageButton {
-    font-size: 2rem;
-    width: 15rem;
-  }
+    .pronouns {
+        margin-bottom: 10vh;
+        font-size: 2.2rem;
+    }
+
+    .pageButton:last-of-type {
+        margin-bottom: 12vh;
+    }
+
+    .pageButton {
+        font-size: 2rem;
+        width: 15rem;
+    }
 }
 
 .unsupportedText {
@@ -156,25 +167,27 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     -webkit-text-stroke: 0.1vw black;
-  }
+}
 
 /* Mobile Landscape */
 @media only screen and (max-width: 920px) and (max-height: 500px) {
-  .main{
-    background-image: url("../images/horizontal-phone-overlay.png");
-    background-size: cover;
-    background-position: center 95%;
-    z-index: 99;
-  }
-  .main > * {
-    display: none;
-  }
-  .unsupportedText {
-    display: block;
-  }
+    .main {
+        background-image: url("../images/horizontal-phone-overlay.png");
+        background-size: cover;
+        background-position: center 95%;
+        z-index: 99;
+    }
+
+    .main > * {
+        display: none;
+    }
+
+    .unsupportedText {
+        display: block;
+    }
 }
 
 /* Tablet Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 768px) {
-  /* CSS code for tablet landscape view */
+    /* CSS code for tablet landscape view */
 }
