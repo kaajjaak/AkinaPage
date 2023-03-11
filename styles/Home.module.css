@@ -148,15 +148,13 @@
 .unsupportedText {
     display: none;
     position: absolute;
-    color: white;
     top: 50%;
     transform: translateY(-70%);
     text-align: center;
     width: 100%;
     font-size: 3vw;
     font-family: 'Roboto Mono', monospace;
-    font-style: bold;
-    color: #FFE1E1;
+    font-weight: bold;
     -webkit-text-stroke: 0.1vw black;
   }
 
