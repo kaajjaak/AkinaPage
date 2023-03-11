@@ -133,7 +133,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: 100;
-    margin-left: 1.5rem;
+    margin-left: 4vw;
     font-size: 2.5vw;
     margin-top: 0.8vw;
     border-bottom: 1px solid black;
@@ -157,11 +157,11 @@
     padding: 0;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5vw;
 }
 
 .fixed {
-    margin-top: 1rem;
+    margin-top: 2vw;
 }
 
 .numberedItalic {
@@ -172,9 +172,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 2.1vw;
     font-weight: 100;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-left: 4vw;
 }
 
 .moveable {
@@ -182,9 +181,6 @@
     width: inherit;
     align-items: center;
 
-}
-
-.moveable:last-of-type {
 }
 
 
@@ -270,6 +266,7 @@
 }
 
 .fixed {
+    padding-left: 2vw;
     font-size: 2vw;
     margin-bottom: 0;
 }
