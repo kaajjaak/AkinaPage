@@ -43,14 +43,14 @@
 .top:not(#top), .top2:not(#top) {
     animation-name: slideOutToRight;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
 .bottom:not(#bottom), .bottom2:not(#bottom) {
     animation-name: slideOutToLeft;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
 
@@ -77,7 +77,7 @@
         transform: translate(-50%);
     }
     100% {
-        transform: translate(-175%);
+        transform: translate(-250%);
     }
 }
 
@@ -86,7 +86,7 @@
         transform: translate(-50%, -100%);
     }
     100% {
-        transform: translate(100%, -100%);
+        transform: translate(150%, -100%);
     }
 }
 
