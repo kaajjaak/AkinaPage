@@ -1,13 +1,19 @@
-import {useState} from 'react';
 import Link from 'next/link';
 import styles from '../styles/MobileBars.module.css'
+import React from "react";
 
-function SlideButton(props) {
-    const [setIsLinkClicked] = useState(false);
+interface Props {
+    index: number;
+    slideClass: string;
+    pageButton: string;
+    hidePhone: string;
+    text: string;
+}
 
-    function handleClick(event) {
-        event.preventDefault();
-        setIsLinkClicked(true);
+function SlideButton(props: Props) {
+
+    function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent> | undefined) {
+        event?.preventDefault();
         const elements2 = document.getElementsByClassName(`${styles.bar}`)
         console.log(document.getElementsByClassName(`${styles.bar}`))
         elements2[props.index].classList.add(`${styles.slideUp}`);

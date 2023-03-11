@@ -1,9 +1,19 @@
 import styles from '../styles/MobileBars.module.css'
-import Image from 'next/image'
-import {generateContent, SelectContent} from '../utils/GenerateContent'
+import Image, {StaticImageData} from 'next/image'
+import {SelectContent} from '../utils/GenerateContent'
 import ExitCross from '../components/exitcross'
 
-export default function MobileBar(props) {
+interface Props {
+    title: string;
+    borderless: boolean;
+    slideClass: string;
+    index: number;
+    type: string;
+    content: Object;
+    src: StaticImageData;
+    alt: string;
+}
+export default function MobileBar(props: Props) {
     return (
         <div className={styles.bar}>
             <div></div>

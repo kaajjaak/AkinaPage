@@ -1,13 +1,18 @@
-import {useState} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/MobileBars.module.css'
 
-function ExitCross(props) {
-    const [setIsLinkClicked] = useState(false);
+interface Props {
+    index: number;
+    slideClass: string;
+    wrapper: string;
 
-    function handleClick(event) {
-        event.preventDefault();
-        setIsLinkClicked(true);
+}
+
+function ExitCross(props : Props) {
+
+    function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent> | undefined): void {
+        event?.preventDefault()
         const elements = document.getElementsByClassName(`${props.slideClass}`)
         elements[props.index].classList.add(`${styles.slideDown}`)
         elements[props.index].classList.remove(`${styles.slideUp}`)
@@ -18,7 +23,7 @@ function ExitCross(props) {
 
     return (
         <Link href="">
-            <a onClick={handleClick} className={styles.adisable}>
+            <a href="#" onClick={(e) => handleClick(e)}>
                 <p className={styles.crossText}>&#x2715;</p>
             </a>
         </Link>

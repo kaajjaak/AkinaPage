@@ -1,21 +1,23 @@
-import {useState} from 'react';
+import React from 'react';
 import {removeIdsFromWindow} from "../utils/RemoveIds";
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
-function MyLink(props) {
-    const router = useRouter();
-    const [setIsLinkClicked] = useState(false);
+interface Props {
+    desktop: boolean;
+    iconStyle: string;
+}
 
-    function handleClick(event) {
-        event.preventDefault();
-        setIsLinkClicked(true);
+function MyLink(props: Props) {
+    const router = useRouter();
+
+    function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent> | undefined) {
+        event?.preventDefault()
         if (!props.desktop) {
             return router.push('../');
         }
         removeIdsFromWindow();
         setTimeout(() => {
-            setIsLinkClicked(false);
             router.push('../');// Navigate to the new page
         }, 2000); // Change 2000 to the number of milliseconds you want the delay to be
     }

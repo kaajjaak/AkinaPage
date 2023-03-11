@@ -42,24 +42,27 @@ const Personal: NextPage = () => {
                 <main className={styles.main}>
                     <HomeIcon iconStyle={styles.homeIcon} desktop={true}/>
                     <div className={styles.desktopBars}>
-                        <DesktopBar desktop={true} alt="girl in front of computer" image={image1} title="About Me"
+                        <DesktopBar edged={false} alt="girl in front of computer" image={image1} title="About Me"
                                     left={false} content={about_me} type="normal" top={true}/>
-                        <DesktopBar desktop={true} alt="girl in holding a book" image={image2} title="Favourite Books"
+                        <DesktopBar edged={false} alt="girl in holding a book" image={image2} title="Favourite Books"
                                     left={true} content={favourite_books} top={false} type="numbered"/>
                     </div>
                     <HomeIcon iconStyle={`${styles.homeArrow} ${styles.hidePhone}`} desktop={false}/>
                     <div className={styles.wrapper}>
                         <div className={`${styles.selectImg} ${styles.hidePhone}`}>
-                            <Image src={image3} alt="rainbow themed girl"  height="256" width="256" layout="responsive" objectFit="cover"/>
+                            <Image src={image3} alt="rainbow themed girl" height="256" width="256" layout="responsive"
+                                   objectFit="cover"/>
                         </div>
                         <SlideButton slideClass={styles.wrapper} pageButton={styles.pageButton}
                                      hidePhone={styles.hidePhone} index={0} text="About Me"/>
                         <SlideButton slideClass={styles.wrapper} pageButton={styles.pageButton}
                                      hidePhone={styles.hidePhone} index={1} text="Favourite Books"/>
                     </div>
-                    <MobileBar slideClass={styles.wrapper} alt="girl playing the guitar in a cherry tree forrest" index={0} content={about_me} src={image4} type="normal"
+                    <MobileBar borderless={false} slideClass={styles.wrapper} alt="girl playing the guitar in a cherry tree forrest"
+                               index={0} content={about_me} src={image4} type="normal"
                                title="About Me"/>
-                    <MobileBar slideClass={styles.wrapper} alt="girl reading a book looking at you" index={1} content={favourite_books} type="numbered-italic"
+                    <MobileBar borderless={false} slideClass={styles.wrapper} alt="girl reading a book looking at you" index={1}
+                               content={favourite_books} type="numbered-italic"
                                src={image5} title="Favourite Books"/>
                 </main>
             </div>
