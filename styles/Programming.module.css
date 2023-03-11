@@ -8,7 +8,7 @@
 }
 
 .bgImg {
-    background: linear-gradient(0deg, rgba(88, 88, 88, 0.7), rgba(88, 88, 88, 0.7)), url('../images/programming-desktop-back.png');
+    background: linear-gradient(0deg, rgba(88, 88, 88, 0.7), rgba(88, 88, 88, 0.7)), url('../public/images/programming-desktop-back.png');
     background-size: 100% 100%;
 }
 
@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
     .bgImg {
-        background: url('../images/programming-mobile-back.png');
+        background: url('../public/images/programming-mobile-back.png');
         background-size: 100% 100%;
     }
 
@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 768px) {
     .bgImg {
-        background: url('../images/programming-mobile-back.png');
+        background: url('../public/images/programming-mobile-back.png');
         background-size: 100% 100%;
     }
 
@@ -175,7 +175,7 @@
     }
 
     .bgImg {
-        background: linear-gradient(0deg, rgba(88, 88, 88, 0.7), rgba(88, 88, 88, 0.7)), url('../images/programming-desktop-back.png') !important;
+        background: linear-gradient(0deg, rgba(88, 88, 88, 0.7), rgba(88, 88, 88, 0.7)), url('../public/images/programming-desktop-back.png') !important;
         background-size: 100% 100% !important;
     }
 }

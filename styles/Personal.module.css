@@ -11,7 +11,7 @@
 
 
 .bgImg {
-    background: linear-gradient(0deg, rgba(250, 203, 203, 0.35), rgba(250, 203, 203, 0.35)), url('../images/personal-desktop-back.png');
+    background: linear-gradient(0deg, rgba(250, 203, 203, 0.35), rgba(250, 203, 203, 0.35)), url('../public/images/personal-desktop-back.png');
     background-size: 100% 100%;
 }
 
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 768px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(250, 203, 203, 0.4), rgba(250, 203, 203, 0.4)), url('../images/personal-mobile-back.png');
+        background: linear-gradient(0deg, rgba(250, 203, 203, 0.4), rgba(250, 203, 203, 0.4)), url('../public/images/personal-mobile-back.png');
         background-size: 100% 100%;
     }
 
@@ -72,7 +72,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(224, 191, 191, 0.4), rgba(224, 191, 191, 0.4)), url('../images/personal-mobile-back.png');
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.4), rgba(224, 191, 191, 0.4)), url('../public/images/personal-mobile-back.png');
         background-size: 100% 100%;
     }
 
@@ -188,7 +188,7 @@
     }
 
     .bgImg {
-        background: linear-gradient(0deg, rgba(250, 203, 203, 0.4), rgba(250, 203, 203, 0.4)), url('../images/personal-desktop-back.png') !important;
+        background: linear-gradient(0deg, rgba(250, 203, 203, 0.4), rgba(250, 203, 203, 0.4)), url('../public/images/personal-desktop-back.png') !important;
         background-size: 100% 100% !important;
     }
 }

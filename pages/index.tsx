@@ -19,9 +19,9 @@ const Home: NextPage = () => {
                 <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
                 <meta name="theme-color" content="#FFE1E1" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="#FFE1E1" />
-                <link rel="preload" href="../images/mobile-back.png" as="image"/>
-                <link rel="preload" href="../images/desktop-back.png" as="image"/>
-                <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
+                <link rel="preload" href="../public/images/mobile-back.png" as="image"/>
+                <link rel="preload" href="../public/images/desktop-back.png" as="image"/>
+                <link rel="preload" href="../public/images/horizontal-phone-overlay.png" as="image"/>
             </Head>
             <div className={styles.bgImg}>
                 <main className={`${styles.main}`}>

@@ -20,7 +20,7 @@
 
 
 .bgImg {
-    background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/desktop-back.png');
+    background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../public/images/desktop-back.png');
     background-size: 100% 100%;
 
 }
@@ -93,14 +93,14 @@
 
 @media screen and (max-width: 768px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../public/images/mobile-back.png');
         background-size: 100% 100%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../public/images/mobile-back.png');
         background-size: 100% 100%;
     }
     .pageButton {
@@ -111,14 +111,14 @@
 
 @media screen and (max-width: 768px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/mobile-back.png');
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../public/images/mobile-back.png');
         background-size: 100% 100%;
     }
 }
 
 @media screen and (max-width: 850px) and (max-height: 414px) {
     .bgImg {
-        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../images/desktop-back.png') !important;
+        background: linear-gradient(0deg, rgba(224, 191, 191, 0.75), rgba(224, 191, 191, 0.75)), url('../public/images/desktop-back.png') !important;
         background-size: 100% 100% !important;
     }
     .main {

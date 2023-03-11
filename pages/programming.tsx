@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Programming.module.css'
 import DesktopBar from '../components/programming-components'
-import image1 from '../images/anime-girl-glasses.png'
-import image2 from '../images/anime-girl-flower.png'
-import image3 from '../images/programming-mobile-select.png'
-import image4 from '../images/anime-girl-glasses-wide.png'
-import image5 from '../images/anime-girl-flower-wide.png'
+import image1 from '../public/images/anime-girl-glasses.png'
+import image2 from '../public/images/anime-girl-flower.png'
+import image3 from '../public/images/programming-mobile-select.png'
+import image4 from '../public/images/anime-girl-glasses-wide.png'
+import image5 from '../public/images/anime-girl-flower-wide.png'
 import HomeIcon from '../components/homeicon'
 import SlideButton from '../components/slidebutton'
 import MobileBar from '../components/mobilebars'
@@ -54,8 +54,8 @@ const Programming: NextPage = () => {
                 <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
                 <meta name="theme-color" content="#FFE1E1"  />
                 <meta name="apple-mobile-web-app-status-bar-style" content="#FFE1E1" />
-                <link rel="preload" href="../images/programming-desktop-back.png" as="image"/>
-                <link rel="preload" href="../images/programming-mobile-back.png" as="image"/>
+                <link rel="preload" href="../public/images/programming-desktop-back.png" as="image"/>
+                <link rel="preload" href="../public/images/programming-mobile-back.png" as="image"/>
             </Head>
             <div className={styles.bgImg}>
                 <main className={`${styles.main}`}>
