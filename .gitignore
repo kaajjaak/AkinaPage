@@ -33,3 +33,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+/.idea/.gitignore
+/.idea/AkinaPage.iml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/replit_zip_error_log.txt
+/.upm/store.json
+/.idea/vcs.xml
