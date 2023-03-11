@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                 <link rel="preload" href="../images/desktop-back.png" as="image"/>
                 <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
             </Head>
-            <div className={styles.bgimg}>
+            <div className={styles.bgImg}>
                 <main className={`${styles.main} ${unsupported.main}`}>
                     <Unsupported/>
                     <h1 className={styles.title}>

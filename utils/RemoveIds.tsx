@@ -1,4 +1,4 @@
-function removeIdsRecursive(node) {
+function removeIdsRecursive(node: any) {
   if (
     node.nodeType === Node.ELEMENT_NODE &&
     node.hasAttribute("id") &&

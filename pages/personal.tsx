@@ -42,7 +42,7 @@ const Personal: NextPage = () => {
                 <link rel="preload" href="../images/personal-mobile-back.png" as="image"/>
                 <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
             </Head>
-            <div className={styles.bgimg}>
+            <div className={styles.bgImg}>
                 <main className={`${styles.main} ${unsupported.main}`}>
                     <Unsupported />
                     <HomeIcon iconStyle={styles.homeIcon} desktop={true}/>
