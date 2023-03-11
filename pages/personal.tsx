@@ -2,6 +2,7 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Personal.module.css'
+import unsupported from '../styles/Unsupported.module.css'
 import DesktopBar from '../components/personal-components'
 import image1 from '../images/anime-girl-pc.png'
 import image2 from '../images/anime-girl-book.png'
@@ -11,6 +12,8 @@ import image5 from '../images/anime-girl-book-frame.png'
 import HomeIcon from '../components/homeicon'
 import SlideButton from '../components/slidebutton'
 import MobileBar from '../components/mobilebars'
+import Unsupported from "../components/unsupported";
+
 
 const about_me = {
     Pronouns: "She/Her",
@@ -37,9 +40,11 @@ const Personal: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
                 <link rel="preload" href="../images/personal-desktop-back.png" as="image"/>
                 <link rel="preload" href="../images/personal-mobile-back.png" as="image"/>
+                <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
             </Head>
             <div className={styles.bgimg}>
-                <main className={styles.main}>
+                <main className={`${styles.main} ${unsupported.main}`}>
+                    <Unsupported />
                     <HomeIcon iconStyle={styles.homeIcon} desktop={true}/>
                     <div className={styles.desktopBars}>
                         <DesktopBar edged={false} alt="girl in front of computer" image={image1} title="About Me"

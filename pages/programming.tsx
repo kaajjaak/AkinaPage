@@ -11,6 +11,8 @@ import image5 from '../images/anime-girl-flower-wide.png'
 import HomeIcon from '../components/homeicon'
 import SlideButton from '../components/slidebutton'
 import MobileBar from '../components/mobilebars'
+import unsupported from "../styles/Unsupported.module.css";
+import Unsupported from "../components/unsupported";
 
 const languages = {
     JS: "Node.js & React",
@@ -49,8 +51,9 @@ const Programming: NextPage = () => {
                 <link rel="preload" href="../images/programming-desktop-back.png" as="image"/>
                 <link rel="preload" href="../images/programming-mobile-back.png" as="image"/>
             </Head>
-            <div className={styles.bgimg}>
-                <main className={styles.main}>
+            <div className={styles.bgImg}>
+                <main className={`${styles.main} ${unsupported.main}`}>
+                    <Unsupported/>
                     <HomeIcon iconStyle={styles.homeIcon} desktop={true}/>
                     <div className={styles.desktopBars}>
                         <DesktopBar alt="girl with glasses" image={image1} title="Programming Languages and Frameworks:"
@@ -68,9 +71,9 @@ const Programming: NextPage = () => {
                         <SlideButton slideClass={styles.wrapper} pageButton={styles.pageButton}
                                      hidePhone={styles.hidePhone} index={1} text="Projects"/>
                     </div>
-                    <MobileBar borderless={true} slideClass={styles.wrapper} index={0} content={languages} src={image4}
+                    <MobileBar alt="close up of girl with glasses" borderless={true} slideClass={styles.wrapper} index={0} content={languages} src={image4}
                                type="unordered" title="Programming Languages and Frameworks"/>
-                    <MobileBar borderless={true} slideClass={styles.wrapper} index={1} content={projects} type="misc"
+                    <MobileBar alt="close up of girl with plants in her hair" borderless={true} slideClass={styles.wrapper} index={1} content={projects} type="misc"
                                src={image5} title="Projects"/>
                 </main>
             </div>

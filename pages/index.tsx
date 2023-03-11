@@ -2,6 +2,9 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Unsupported from "../components/unsupported";
+import unsupported from "../styles/Unsupported.module.css";
+
 
 const Home: NextPage = () => {
     return (
@@ -15,9 +18,8 @@ const Home: NextPage = () => {
                 <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
             </Head>
             <div className={styles.bgimg}>
-                <p className={styles.unsupportedText}>Your current screen size is not supported!<br/>Please consider
-                    flipping your device!</p>
-                <main className={styles.main}>
+                <main className={`${styles.main} ${unsupported.main}`}>
+                    <Unsupported/>
                     <h1 className={styles.title}>
                         Akina
                     </h1>
