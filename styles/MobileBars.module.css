@@ -236,3 +236,12 @@
     font-weight: 100;
 }
 
+@media screen and (max-width: 736px) and (max-height: 414px) {
+    .bar.slideUp {
+        display: none;
+    }
+}
+
+.bar {
+    border-radius: 20px;
+}

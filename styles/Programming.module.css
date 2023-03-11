@@ -108,6 +108,8 @@
     justify-items: center;
     grid-template-rows: 1fr 1fr;
     gap: 8%;
+    margin: 0;
+    top: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
@@ -144,3 +146,50 @@
     }
 }
 
+@media screen and (max-width: 1350px) {
+    .homeIcon {
+        width: 5em;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px) {
+    .desktopBars {
+        display: inline-grid !important;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .homeArrow {
+        display: none;
+    }
+
+    .homeIcon {
+        display: block;
+        height: 3em;
+        left: 0;
+        top: 2vw;
+
+    }
+
+    .bgImg {
+        background: linear-gradient(0deg, rgba(88, 88, 88, 0.7), rgba(88, 88, 88, 0.7)), url('../images/programming-desktop-back.png') !important;
+        background-size: 100% 100% !important;
+    }
+}
+
+@media screen and (max-width: 850px) and (max-height: 414px) {
+    .desktopBars {
+        gap: 1%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .selectImg {
+        width: 70%;
+        margin-left: 15%;
+    }
+}

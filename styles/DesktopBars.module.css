@@ -144,7 +144,7 @@
 .title2 {
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 100;
-    margin-left: 0.8vw;
+    margin-left: 2vw;
     font-size: 2.4vw;
     margin-top: 0.4vw;
     border-bottom: 1px solid black;
@@ -226,19 +226,19 @@
     font-size: 1.7vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    margin: 0.4vw 0 0;
+    margin: 0.4vw 0 0 0.5vw;
 }
 
 .projectDescription {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.6vw;
     white-space: initial;
+    margin: 0 0 0 0.5vw;
 }
 
 .projectTech {
-    margin: 0;
+    margin: 0 0 0 0.5vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 1.6vw;
@@ -266,7 +266,7 @@
 }
 
 .fixed {
-    padding-left: 2vw;
+    padding-left: 0.4vw;
     font-size: 2vw;
     margin-bottom: 0;
 }
@@ -294,4 +294,23 @@
 .numberedItalic.mobile {
     margin: 3vw 2vw 3vw 2vw;
     padding-left: 6vw;
+}
+
+.edged {
+    border-radius: 22px;
+}
+.edged img {
+    border-radius: 0 22px 22px 0;
+}
+.edged.reverse img {
+    border-radius: 22px 0 0 22px;
+}
+
+@media screen and (max-width: 736px) and (max-height: 414px) {
+    .title2 {
+        font-size:2vw
+    }
+    .fixed {
+        font-size: 1.5vw;
+    }
 }

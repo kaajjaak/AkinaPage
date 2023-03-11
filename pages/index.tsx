@@ -2,8 +2,6 @@ import type {NextPage} from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Unsupported from "../components/unsupported";
-import unsupported from "../styles/Unsupported.module.css";
 
 
 const Home: NextPage = () => {
@@ -11,7 +9,6 @@ const Home: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>Akina Homepage</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="A pink website!"/>
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -27,8 +24,9 @@ const Home: NextPage = () => {
                 <link rel="preload" href="../images/horizontal-phone-overlay.png" as="image"/>
             </Head>
             <div className={styles.bgImg}>
-                <main className={`${styles.main} ${unsupported.main}`}>
-                    <Unsupported/>
+                <main className={`${styles.main}`}>
+                    {/*<main className={`${styles.main} ${unsupported.main}`}>*/}
+                    {/*<Unsupported/>*/}
                     <h1 className={styles.title}>
                         Akina
                     </h1>

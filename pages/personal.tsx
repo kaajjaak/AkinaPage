@@ -35,7 +35,6 @@ const Personal: NextPage = () => {
             <Head>
                 <title>Personal</title>
                 <meta name="description" content="A pink website!"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />

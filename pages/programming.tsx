@@ -11,8 +11,6 @@ import image5 from '../images/anime-girl-flower-wide.png'
 import HomeIcon from '../components/homeicon'
 import SlideButton from '../components/slidebutton'
 import MobileBar from '../components/mobilebars'
-import unsupported from "../styles/Unsupported.module.css";
-import Unsupported from "../components/unsupported";
 
 const languages = {
     JS: "Node.js & React",
@@ -46,7 +44,6 @@ const Programming: NextPage = () => {
         <div>
             <Head>
                 <title>Programming</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="A pink website!"/>
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -61,8 +58,9 @@ const Programming: NextPage = () => {
                 <link rel="preload" href="../images/programming-mobile-back.png" as="image"/>
             </Head>
             <div className={styles.bgImg}>
-                <main className={`${styles.main} ${unsupported.main}`}>
-                    <Unsupported/>
+                <main className={`${styles.main}`}>
+                    {/*<main className={`${styles.main} ${unsupported.main}`}>*/}
+                    {/*<Unsupported/>*/}
                     <HomeIcon iconStyle={styles.homeIcon} desktop={true}/>
                     <div className={styles.desktopBars}>
                         <DesktopBar alt="girl with glasses" image={image1} title="Programming Languages and Frameworks:"
