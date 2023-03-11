@@ -1,11 +1,10 @@
 import styles from '../styles/DesktopBars.module.css'
 import Bar from './templates'
-import {StaticImageData} from "next/image";
 import React from "react";
 
 interface Props {
     alt: string;
-    image: StaticImageData;
+    image: string;
     title: string;
     top: boolean;
     type: string;

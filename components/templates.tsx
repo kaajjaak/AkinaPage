@@ -1,5 +1,5 @@
 import styles from '../styles/DesktopBars.module.css'
-import Image, {StaticImageData} from 'next/image'
+import Image from 'next/image'
 import {SelectContent} from './GenerateContent'
 import React from "react";
 
@@ -15,7 +15,7 @@ interface Props {
     content: Object;
     type: string;
     alt: string;
-    image: StaticImageData;
+    image: string;
 }
 
 export default function Bar(props: Props) {
