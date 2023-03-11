@@ -1,6 +1,6 @@
 import styles from '../styles/MobileBars.module.css'
 import Image, {StaticImageData} from 'next/image'
-import {SelectContent} from '../utils/GenerateContent'
+import {SelectContent} from './GenerateContent'
 import ExitCross from '../components/exitcross'
 
 interface Props {

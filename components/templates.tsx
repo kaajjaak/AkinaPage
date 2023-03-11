@@ -1,6 +1,6 @@
 import styles from '../styles/DesktopBars.module.css'
 import Image, {StaticImageData} from 'next/image'
-import {SelectContent} from '../utils/GenerateContent'
+import {SelectContent} from './GenerateContent'
 import React from "react";
 
 interface Props {
