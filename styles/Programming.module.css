@@ -1,0 +1,145 @@
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgimg {
+  background-image: url('../images/programming-desktop-back.png');
+  background: linear-gradient(0deg, rgba(88,88,88, 0.7), rgba(88,88,88, 0.7)), url('../images/programming-desktop-back.png');
+  background-size: 100% 100%;
+}
+
+.homeIcon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index:99;
+}
+
+.homeArrow {
+  top: 1rem;
+  left: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.8);
+  width: 70px;
+  height: 70px;
+}
+
+.homeIcon:hover {
+  fill: #f2e197;
+  stroke: #f2e197;
+}
+
+.homeIcon:hover path {
+  fill: #f2e197;
+  stroke: #f2e197;
+}
+
+.homeIcon path { 
+  transition: fill .5s ease, stroke .5s ease;     
+}
+
+@media screen and (min-width: 769px) {
+  .hidePhone {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
+  .bgimg {
+    background: url('../images/programming-mobile-back.png');
+    background-size: 100% 100%;
+  }
+  .homeIcon {
+    display: none;
+  }
+  .hidePhone {
+    display: block;
+  }
+
+  .main .pageButton {
+    font-size: 2.5rem;
+    width: 22rem;
+    line-height: 1.8;
+    margin-top: 1.8rem;
+    border-radius: 23px;
+  }
+}
+
+.selectImg {
+  width: 100%;
+  transform: translateY(-40%);
+  overflow: hidden;
+  border-radius: 30px; 
+}
+
+.pageButton {
+  font-size: 1.75rem;
+  color: #b69591;
+  border-radius: 18px;
+  width: 15.5rem;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.8;
+  background: rgba(255,225,225, 0.9);
+  margin-top: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  transform: translateY(40%);
+}
+
+.pageButton:active {
+  box-shadow: 0 0 40px 40px #fff0e1 inset;
+}
+
+.wrapper {
+  position: absolute;
+}
+
+.desktopBars {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: inline-grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+  gap: 8%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 2388px) {
+  .desktopBars {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .desktopBars {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bgimg {
+    background: url('../images/programming-mobile-back.png');
+    background-size: 100% 100%;
+  }
+  .homeIcon {
+    display: none;
+  }
+  .hidePhone {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 300px) and (max-height: 720px) {
+  .selectImg {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
