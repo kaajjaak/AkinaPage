@@ -39,6 +39,9 @@ const Home: NextPage = () => {
                     <Link href="./programming">
                         <a className={styles.pageButton}>Programming</a>
                     </Link>
+                    {/*<Link href="mailto: princessakina@proton.me">*/}
+                    {/*    <a>Contact</a>*/}
+                    {/*</Link>*/}
                 </main>
             </div>
         </div>
