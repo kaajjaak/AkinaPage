@@ -72,6 +72,19 @@
     box-shadow: 0 0 40px 40px #fff0e1 inset;
 }
 
+.contact {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
 
 .main:hover {
     cursor: default;
