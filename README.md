@@ -8,7 +8,7 @@ This is my personal website project that I made in order to learn and experiment
 ## Getting Started
 
 1. Clone this repository:
-`git clone https://github.com/your-username/personal-nextjs-website.git`
+`git clone https://github.com/kaajjaak/AkinaPage.git`
 
 2. Install dependencies:
 `npm install`
